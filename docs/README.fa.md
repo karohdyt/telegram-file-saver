@@ -64,7 +64,7 @@ docker compose version          # باید یک نسخه چاپ کند (Compose 
 ### ۳. دانلود پروژه و تنظیم
 
 ```bash
-git clone https://github.com/<you>/telegram-file-saver-bot.git /opt/telegram-file-saver-bot
+git clone https://github.com/karohdyt/telegram-file-saver-bot.git /opt/telegram-file-saver-bot
 cd /opt/telegram-file-saver-bot
 cp .env.example .env
 nano .env
