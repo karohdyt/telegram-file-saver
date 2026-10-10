@@ -63,7 +63,7 @@ docker compose version          # must print a version (Compose v2)
 ### 3. Download the project and configure it
 
 ```bash
-git clone https://github.com/<you>/telegram-file-saver-bot.git /opt/telegram-file-saver-bot
+git clone https://github.com/karohdyt/telegram-file-saver-bot.git /opt/telegram-file-saver-bot
 cd /opt/telegram-file-saver-bot
 cp .env.example .env
 nano .env
@@ -180,6 +180,4 @@ docker compose down                                   # stop the API server (vol
 | "Not enough disk space" | Free space or choose another folder; see `/disk` for details |
 | Disk filling up | `du -sh /var/lib/docker/volumes/telegram-bot-api-data/_data` - leftovers of failed transfers can be deleted |
 
-## License
 
-Add a license of your choice (e.g. MIT) before publishing.
