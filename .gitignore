@@ -1,0 +1,9 @@
+.env
+settings.json
+settings.json.tmp
+__pycache__/
+*.pyc
+venv/
+.venv/
+.idea/
+.vscode/

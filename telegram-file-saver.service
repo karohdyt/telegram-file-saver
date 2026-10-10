@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram File Saver Bot
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+
+[Service]
+Type=simple
+# root is required: the Bot API data lives in /var/lib/docker (root only)
+User=root
+WorkingDirectory=/opt/telegram-file-saver-bot
+ExecStart=/opt/telegram-file-saver-bot/venv/bin/python bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
